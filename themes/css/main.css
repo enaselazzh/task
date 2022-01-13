@@ -1,0 +1,349 @@
+/* eidt navbar */
+/* .navbar-dark{
+    background: transparent;
+} */
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  color: white;
+}
+ .bg-dark{
+ background:rgb(0 0 0 / 70%) !important ;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:  #080808!important;
+  background: #EABF9F!important;
+  border-radius: 10px 0px;
+
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  transition:   padding-left 0.25s ease-in-out;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+  padding-left: 10px !important;
+  color: #16181b;
+  text-decoration: none;
+  background-color: #EABF9F!important;
+
+}
+
+.navbar-dark .navbar-brand img {
+  height: 47px;
+}
+
+
+.carousel-item {
+  height: 550px;
+  background-size: cover;
+}
+.carousel-indicators li {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  width: 24px;
+  height: 23px;
+  margin-right: 3px;
+  margin-left: 3px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity 0.6s ease;
+  border-radius: 50%;
+}
+/* للعودة الى بداية الصفحة  */
+
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.gototop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gototop a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.gototop a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.gototop a:hover,
+.gototop a:active,
+.gototop a:focus {
+  text-decoration: none;
+  outline: none;
+}
+/* start Style  edit Profile users */
+.form {
+  border: 1px solid white;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 4px 2px #b68973;
+}
+.form-row,
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-row .form-group label{
+  justify-content:flex-start;
+  align-items: flex-start;
+}
+.form-group {
+  width: 50%;
+}
+.h3 {
+  color: #b68973;
+}
+.form-group input {
+  border: 1px #b68973 solid;
+}
+.form-control {
+  width: 75%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #b3c5d6;
+  border-radius: 1.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form_img {
+  position: relative;
+}
+.edit-span i {
+  color: #b68973;
+  position: absolute;
+  right: 210px;
+  top: 10px;
+}
+@media (max-width: 540px) and (min-width: 767.98px) {
+  .edit-span i {
+    right: 85px;
+    top: 10px;
+  }
+}
+@media (max-width: 720px) and (max-width: 960px) {
+  .edit-span i {
+    right: 80px;
+    top: 10px;
+  }
+}
+@media (max-width: 960px) {
+  .edit-span i {
+    right: 121px;
+    top: 10px;
+  }
+}
+
+small {
+  display: block;
+}
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+#message2 {
+  display: none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid::before {
+  position: relative;
+  left: -5px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid::before {
+  position: relative;
+  left: -5px;
+  content: "✖";
+}
+.btn{
+  background:none;
+  color: #b68973;
+  border-radius: 10px ;
+ 
+}
+/* end Style  edit Profile users */
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+.gr-1 {
+  /* background: linear-gradient(170deg,  #b68973  0%, #EABF9F 50%,    #FAF3E0 100%); */
+  /* background: url(image/camera3.jpg); */
+  background: #ccbe9d85;
+}
+
+.gr-2 {
+  background: linear-gradient(170deg, #b4ec51 0%, #429321 100%);
+}
+
+.gr-3 {
+  background: linear-gradient(170deg, #c86dd7 0%, #3023ae 100%);
+}
+
+* {
+  transition: 0.5s;
+}
+
+.h-100 {
+  height: 100vh !important;
+}
+
+.align-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.column {
+  margin-top: 3rem;
+  padding-left: 3rem;
+}
+.column:hover {
+  padding-left: 0;
+}
+.column:hover .card .txt {
+  margin-left: 1rem;
+}
+.column:hover .card .txt h1,
+.column:hover .card .txt p {
+  color: white;
+  opacity: 1;
+}
+.column:hover a {
+  color: white;
+}
+.column:hover a:after {
+  width: 10%;
+}
+
+.card {
+  min-height: 170px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  color: black;
+  letter-spacing: 0.05rem;
+  font-family: "Oswald", sans-serif;
+  box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
+}
+.card .txt {
+  z-index: 1;
+}
+.card .txt h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card .txt p {
+  font-size: 0.7rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0rem;
+  margin-top: 33px;
+  opacity: 0;
+  color: white;
+}
+.card a {
+  z-index: 3;
+  font-size: 0.7rem;
+  color: black;
+  margin-left: 1rem;
+  position: relative;
+  bottom: -0.5rem;
+  text-transform: uppercase;
+}
+.card a:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  width: 0;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid white;
+  transition: 0.5s;
+}
+.card .ico-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card i {
+  position: relative;
+  right: -50%;
+  top: 60%;
+  font-size: 12rem;
+  line-height: 0;
+  opacity: 0.2;
+  color: white;
+  z-index: 0;
+}
